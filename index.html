@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/moodmeter.svg" type="image/x-icon">
+
+    <title>Moodmeter</title>
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <img src="./img/moodmeter.svg" alt="moodmeter logo" />
+        <h1>Moodmeter</h1>
+      </div>
+      <div class="container">
+        <label for="input">How's your mood today?</label>
+        <input id="input" type="number" min="0" max="10" value="5" />
+
+        <meter
+          id="energy"
+          min="0"
+          max="10"
+          low="3"
+          high="8"
+          optimum="9"
+          value="5"
+        ></meter>
+
+        <p id="message">Good enough?</p>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <p>Copyleft &#127279; 2021</p>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
